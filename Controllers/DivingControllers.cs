@@ -15,8 +15,8 @@ namespace AfredAPI.Controllers
             _weatherService = weatherService;
         }
 
-        // GET api/weather/forecast
-        [HttpGet("forecast")]
+        // GET api/Diving/divingForecast
+        [HttpGet("divingForecast")]
         public async Task<ActionResult<WeatherData[]>> GetForecast()
         {
             var forecast = await _weatherService.GetWeatherDataAsync();
