@@ -1,12 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Diving.Services;
+using Diving.Models;
 
 namespace AfredAPI.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class DivingControllers : Controller
     {
-        public IActionResult Index()
+        private readonly WeatherService _weatherService;
+
+        public DivingControllers(WeatherService weatherService)
         {
-            return View();
+            _weatherService = weatherService;
+        }
+
+        // GET api/weather/forecast
+        [HttpGet("forecast")]
+        public async Task<ActionResult<WeatherData[]>> GetForecast()
+        {
+            var forecast = await _weatherService.GetWeatherDataAsync();
+            return Ok(forecast);
         }
     }
 }
