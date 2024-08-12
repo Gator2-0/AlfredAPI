@@ -20,6 +20,7 @@ namespace AfredAPI.Controllers
         public async Task<ActionResult<WeatherData[]>> GetForecast()
         {
             var forecast = await _weatherService.GetWeatherDataAsync();
+            Console.WriteLine(forecast.ToString());
             return Ok(forecast);
         }
     }
