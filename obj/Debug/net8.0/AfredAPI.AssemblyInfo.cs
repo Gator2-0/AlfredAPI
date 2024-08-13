@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AfredAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75c0d884144dd3a2acf3c9c8bd0cbd03e9712334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94936c2ba3744cba5d583428f9e6cbad8d1047a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AfredAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AfredAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
